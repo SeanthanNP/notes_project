@@ -1,7 +1,8 @@
+# project/urls.py
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('notes.urls')),
+    path('api/', include('notes.urls')),  # This will map /api/ to the urls defined in notes.urls
 ]
